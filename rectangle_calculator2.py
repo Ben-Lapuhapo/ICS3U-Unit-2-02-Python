@@ -5,23 +5,23 @@
 # This program calculates area and perimeter of a rectangle that the user gave
 
 
-import math
 
 
 def main():
-    print("Rectangle calculator")
+    #input
     print("")
     length = int(input("Please enter the rectangle's length: "))
     print("")
     width = int(input("Please enter the rectangle's width: "))
+    
+    #process
+    area=length*width
+    perimeter=2*(length+width)
+    
+    #output
     print("")
-    print("The rectangle's  given dimensions are:")
-    print("Length: ", length, "cm")
-    print("Width: ", width, "cm")
-    print("")
-    print("The rectangle's perimeter is {}".format(2*length+2*width))
-    print("The rectangle's area is {}".format(length*width))
-
+    print("Area is {}mm^2".format(area))
+    print("Perimeter is {}mm".format(perimeter))
 
 if __name__ == "__main__":
     main()
